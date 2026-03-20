@@ -3,153 +3,164 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aqua Fish Farm</title>
+<title>Aqua Fish Farm | Fresh & Healthy Fish</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
 <style>
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    background: #f4f9f9;
+    background: #0f2027;
+    color: white;
 }
 
-/* HEADER */
+/* Header */
 header {
-    background: linear-gradient(90deg, #0077b6, #00b4d8);
-    color: white;
-    padding: 20px;
     text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
 }
 
 header h1 {
-    font-size: 32px;
+    font-size: 40px;
 }
 
 header p {
-    font-size: 16px;
+    margin-top: 10px;
+    font-size: 18px;
 }
 
-/* HERO SECTION */
-.hero {
-    height: 60vh;
-    background: url('prawn2.jpg') center/cover no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
+/* Section */
+.section {
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+h2 {
     text-align: center;
+    margin-bottom: 25px;
+    color: #00c6ff;
 }
 
-.hero h2 {
-    font-size: 40px;
-    background: rgba(0,0,0,0.5);
-    padding: 10px 20px;
-    border-radius: 10px;
-}
-
-/* ABOUT */
+/* About */
 .about {
-    padding: 40px;
     text-align: center;
+    line-height: 1.6;
 }
 
-.about h2 {
-    color: #0077b6;
-    margin-bottom: 10px;
-}
-
-/* GALLERY UNIQUE GRID */
+/* Gallery Grid */
 .gallery {
-    padding: 40px;
-}
-
-.grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 200px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 15px;
 }
 
-.grid img {
+.gallery img {
     width: 100%;
-    height: 100%;
+    height: 200px;
     object-fit: cover;
     border-radius: 12px;
-    transition: 0.3s;
+    transition: 0.4s;
 }
 
-.grid img:hover {
-    transform: scale(1.05);
+.gallery img:hover {
+    transform: scale(1.08);
 }
 
-/* UNIQUE LAYOUT */
-.img1 { grid-column: span 2; }
-.img2 { grid-row: span 2; }
-.img3 { grid-column: span 2; }
-.img4 { grid-column: span 1; }
+/* Unique Highlight Layout */
+.highlight {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+    margin-bottom: 20px;
+}
 
-/* CONTACT */
+.highlight img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* Contact */
 .contact {
-    background: #0077b6;
-    color: white;
     text-align: center;
+    background: #111;
     padding: 30px;
+    border-radius: 10px;
 }
 
-.contact h2 {
-    margin-bottom: 10px;
-}
-
-/* FOOTER */
+/* Footer */
 footer {
-    background: #023e8a;
-    color: white;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
+    background: black;
+    margin-top: 20px;
 }
 </style>
-
 </head>
 
 <body>
 
 <header>
-    <h1>Aqua Fish Farm</h1>
-    <p>Fresh | Natural | Quality Fish & Prawns</p>
+    <h1>🐟 Aqua Fish Farm</h1>
+    <p>Fresh | Healthy | Natural Fish Supply</p>
 </header>
 
-<section class="hero">
-    <h2>Premium Fish Farming Excellence</h2>
-</section>
-
-<section class="about">
+<!-- About -->
+<div class="section">
     <h2>About Our Farm</h2>
-    <p>
-        We specialize in high-quality fish and prawn farming using natural and sustainable methods.
-        Our farm ensures healthy growth, fresh supply, and best quality for customers.
+    <p class="about">
+        We are a dedicated fish farming business providing fresh, high-quality fish 
+        grown in a natural and healthy environment. Our farm focuses on sustainable 
+        practices, proper care, and customer satisfaction.
     </p>
-</section>
+</div>
 
-<section class="gallery">
-    <h2 style="text-align:center; margin-bottom:20px; color:#0077b6;">Our Farm Gallery</h2>
-    
-    <div class="grid">
-        <img src="prawn1.jpg" class="img1">
-        <img src="fish1.jpg" class="img2">
-        <img src="prawn2.jpg" class="img3">
-        <img src="prawn3.jpg" class="img4">
+<!-- Highlight Section (Unique Layout) -->
+<div class="section">
+    <h2>Our Farm Highlights</h2>
+
+    <div class="highlight">
+        <img src="pond.jpg">
+        <img src="fish1.jpg">
     </div>
-</section>
 
-<section class="contact">
+</div>
+
+<!-- Gallery -->
+<div class="section">
+    <h2>Our Fish & Farm Gallery</h2>
+
+    <div class="gallery">
+        <img src="fish1.jpg">
+        <img src="fish2.jpg">
+        <img src="fish3.jpg">
+        <img src="pond.jpg">
+        <img src="harvest.jpg">
+        <img src="feeding.jpg">
+    </div>
+
+</div>
+
+<!-- Contact -->
+<div class="section">
     <h2>Contact Us</h2>
-    <p>📞 Mobile: 7609876684</p>
-    <p>📍 Fresh Supply Available Daily</p>
-</section>
+
+    <div class="contact">
+        <p>📞 Mobile: <strong>7609876684</strong></p>
+        <p>📍 Location: India</p>
+        <p>🚚 Fresh Fish Available for Bulk & Retail</p>
+    </div>
+
+</div>
 
 <footer>
     <p>© 2026 Aqua Fish Farm | All Rights Reserved</p>
