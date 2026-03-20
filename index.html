@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aqua Fish Farm</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #f4f9f9;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(90deg, #0077b6, #00b4d8);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 32px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+/* HERO SECTION */
+.hero {
+    height: 60vh;
+    background: url('prawn2.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 40px;
+    background: rgba(0,0,0,0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+/* ABOUT */
+.about {
+    padding: 40px;
+    text-align: center;
+}
+
+.about h2 {
+    color: #0077b6;
+    margin-bottom: 10px;
+}
+
+/* GALLERY UNIQUE GRID */
+.gallery {
+    padding: 40px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 200px;
+    gap: 15px;
+}
+
+.grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.grid img:hover {
+    transform: scale(1.05);
+}
+
+/* UNIQUE LAYOUT */
+.img1 { grid-column: span 2; }
+.img2 { grid-row: span 2; }
+.img3 { grid-column: span 2; }
+.img4 { grid-column: span 1; }
+
+/* CONTACT */
+.contact {
+    background: #0077b6;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.contact h2 {
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+    background: #023e8a;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Aqua Fish Farm</h1>
+    <p>Fresh | Natural | Quality Fish & Prawns</p>
+</header>
+
+<section class="hero">
+    <h2>Premium Fish Farming Excellence</h2>
+</section>
+
+<section class="about">
+    <h2>About Our Farm</h2>
+    <p>
+        We specialize in high-quality fish and prawn farming using natural and sustainable methods.
+        Our farm ensures healthy growth, fresh supply, and best quality for customers.
+    </p>
+</section>
+
+<section class="gallery">
+    <h2 style="text-align:center; margin-bottom:20px; color:#0077b6;">Our Farm Gallery</h2>
+    
+    <div class="grid">
+        <img src="prawn1.jpg" class="img1">
+        <img src="fish1.jpg" class="img2">
+        <img src="prawn2.jpg" class="img3">
+        <img src="prawn3.jpg" class="img4">
+    </div>
+</section>
+
+<section class="contact">
+    <h2>Contact Us</h2>
+    <p>📞 Mobile: 7609876684</p>
+    <p>📍 Fresh Supply Available Daily</p>
+</section>
+
+<footer>
+    <p>© 2026 Aqua Fish Farm | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
